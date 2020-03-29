@@ -1,5 +1,5 @@
 ## UCLA UPE Spring 2019 Coding Challenge
-Solve a maze.
+Solve an online maze by using the Requests module for Python.
 
 ### How to Run
 <s>use your legs</s>
