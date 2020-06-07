@@ -1,7 +1,7 @@
 import requests
 
 url = 'http://ec2-34-212-54-152.us-west-2.compute.amazonaws.com' # server url
-uid = '305108348' # your uid
+uid = '000000000' # your uid
 resp = requests.post(url + '/session', data = {'uid':uid}) # start new session
 body = resp.json()
 access_token = body['token'] # retrieve access token from response body
@@ -41,10 +41,6 @@ def explore(dir, cur_row, cur_col):
             result = explore(i, nextRow[dir], nextCol[dir])
             if result == 1:
                 return 1
-
-    # for i in range(len(maze)):
-    #     print(maze[i])
-    #     print()
 
 
     oppDir = (dir + 2) % 4
